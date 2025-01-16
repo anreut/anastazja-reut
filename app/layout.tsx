@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 // import { Geist, Geist_Mono } from "next/font/google";
 // import "./globals.css";
 
@@ -14,20 +14,18 @@ import type { Metadata } from "next";
 // });
 
 export const metadata: Metadata = {
-  title: "Anastazja Reut | Blog",
-  description: "Anastazja Reut | Blog",
+	title: "Anastazja Reut | Blog",
+	description: "Anastazja Reut | Blog",
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: ReactNode;
+	children: ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body>
-        {children}
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en">
+			<body>{children}</body>
+		</html>
+	);
 }
