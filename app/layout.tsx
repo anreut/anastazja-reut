@@ -14,18 +14,18 @@ import type { ReactNode } from "react";
 // });
 
 export const metadata: Metadata = {
-	title: "Anastazja Reut | Blog",
-	description: "Anastazja Reut | Blog",
+  title: "Anastazja Reut | Blog",
+  description: "Anastazja Reut | Blog",
 };
 
 export default function RootLayout({
-	children,
+  children,
 }: Readonly<{
-	children: ReactNode;
+  children: ReactNode;
 }>) {
-	return (
-		<html lang="en">
-			<body>{children}</body>
-		</html>
-	);
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
 }
