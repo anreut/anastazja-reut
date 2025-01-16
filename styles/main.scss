@@ -1,0 +1,12 @@
+@use './reset';
+@use './variables' as vars;
+@use './mixins' as mixins;
+
+body {
+}
+
+.main {
+  &__container {
+    @include mixins.container();
+  }
+}

@@ -1,0 +1,12 @@
+@use '../../styles/mixins' as mixins;
+@use '../../styles/variables' as vars;
+
+.header {
+  box-shadow: vars.$box-shadow;
+  &__container {
+    @include mixins.container();
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+}
