@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "linter:check": "biome check",
+    "linter:fix": "biome format --write"
   },
   "dependencies": {
     "date-fns": "^4.1.0",
@@ -20,6 +21,7 @@
     "remark-html": "^16.0.1"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
     "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^19",

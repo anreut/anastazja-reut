@@ -1,6 +1,6 @@
 import Image from "next/image";
+import { PostPreview } from "../_components";
 import { getAllPosts } from "./lib/api";
-import { PostPreview } from "./_components";
 
 const Home = () => {
   const posts = getAllPosts();
@@ -9,7 +9,13 @@ const Home = () => {
       <main>
         <div>
           {posts.map((post, i) => (
-              <PostPreview key={i} title={post.title} date={post.date} excerpt={post.excerpt} slug={post.slug} />
+            <PostPreview
+              key={post.title}
+              title={post.title}
+              date={post.date}
+              excerpt={post.excerpt}
+              slug={post.slug}
+            />
           ))}
         </div>
       </main>
@@ -59,7 +65,6 @@ const Home = () => {
       </footer>
     </div>
   );
-}
+};
 
 export default Home;
-
